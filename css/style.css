@@ -1,0 +1,280 @@
+.g-nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+.g-nav h1{
+  font-family: "Caveat";
+  font-size: 4.3rem;
+  margin-left: 4rem;
+}
+
+.g-nav ul{
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.g-nav ul li:not(:last-child){
+  padding-right: 2rem;
+}
+
+.g-nav  ul li:last-child{
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0.2rem 1.0rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.g-nav ul li p{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.g-nav ul li a{
+  font-weight: bold;
+}
+
+@media screen and (max-width:959px){
+  .g-nav ul{
+    display: none;
+  }
+}
+
+.mv{
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+}
+
+.mv img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* topics */
+.topics {
+  padding: 30px 120px;
+  }
+
+  .topics h2{
+    font-family: "Caveat";
+    font-size: 3rem;
+  }
+  
+  .topics .content-wrapper {
+     display: flex;
+  }
+  
+  .topics .heading {
+  width: 35%;
+  }
+
+  .topics .heading p{
+    text-align: left;
+  }
+
+  .topics .heading p i{
+    margin-left: 2rem;
+  }
+  
+  .topics .content {
+  width: 65%;
+  }
+  
+  .topics .content table {
+  width: 100%;
+  margin: 0 0 25px 0;
+  }
+
+  .topics .content th {
+  padding: 10px 2em 10px 0;
+  border-bottom: 1px dotted;
+  text-align: left;
+  }
+  
+  .topics .content td {
+  border-bottom: 1px dotted;
+  }
+  
+  .topics .content tr:last-of-type th,
+  .topics .content tr:last-of-type td {
+  border-bottom: none;
+  }
+  
+  
+  .topics .content .btn a {
+  display: block;
+  font-size: 1.6rem;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 100px;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 0 0 auto;
+  }
+  
+  .topics .content .btn a:hover {
+    background-color: lightblue;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+  }
+  
+  @media screen and (max-width: 1199px) {
+  .topics {
+  padding: 30px 5vw;
+  }
+  
+  .topics .content-wrapper {
+  display: block;
+  }
+  
+  .topics .heading {
+  width: 100%;
+  }
+
+  .topics .heading p{
+    text-align: center;
+  }
+
+  .topics .heading p i{
+    margin-left: 0;
+  }
+  
+  .topics .heading h2 {
+  text-align: center;
+}
+  
+  .topics .content {
+  width: 100%;
+  }
+}
+  
+  @media screen and (max-width: 767px) {
+  .topics {
+  padding: 30px 0;
+  width: 90%;
+  margin: 0 auto;
+  }
+  
+  .topics .content .btn a {
+  margin: 0 auto;
+  }
+  }
+  
+  @media screen and (max-width: 479px) {
+  .topics .content th {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1.25em 0 0 0;
+  border-bottom: 0;
+  }
+  
+  .topics .content td {
+  display: block;
+  width: 100%;
+  }
+  }
+
+  /* information */
+  
+.information{
+  margin-top: 5rem;
+  position: relative;
+}
+
+.information_image{
+  width: 100%;
+  padding-top: 40%;
+  position: relative;
+  background: url(../image/bundo-kim-GWqSNSxt3yA-unsplash.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.information_txt{
+  position: absolute;
+  padding: 2rem 2rem;
+  top: 30%;
+  text-align: center;
+  margin-left: 2rem;
+  background-color: rgba(255, 255, 255, 0.74);
+  border-radius: 5px;
+}
+
+.information .btn2{
+  font-size: 1.6rem;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 100px;
+  line-height: 35px;
+  margin: 2rem auto 0 auto;
+}
+
+.information .btn2:hover {
+  background-color: lightblue;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+
+@media screen and (max-width:959px){
+  .information_txt{
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+}
+
+/* recruit */
+
+.recruit{
+  margin-bottom: 5rem;
+}
+
+.recruit h2{
+  font-family: "Caveat";
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.recruit_image{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recruit_img1 ,
+.recruit_img2{
+  position: relative;
+  width: 40%;
+  padding-top: 25%;
+}
+
+.recruit_img1 img ,
+.recruit_img2 img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
